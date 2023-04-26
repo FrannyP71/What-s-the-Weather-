@@ -1,4 +1,4 @@
-var userInput = ''
+var userInput = 'New York'
 
 
 
@@ -13,6 +13,8 @@ fetch('http://api.openweathermap.org/geo/1.0/direct?q='+ userInput +'&limit=5&ap
    return response.json()
 }).then(function (data){
     console.log(data)
+    var icon = data.list[0].weather[0].icon
+    document.querySelector('.weather-image').setAttribute('src', 'https://openweathermap.org/img/w/'+ icon +'.png')
 })
 })
 

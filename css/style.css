@@ -1,2 +1,15 @@
-:root  {
-    --bs-blue: #0d6efd;}
+
+h1 {
+    text-align: center;
+    background-color: aqua;
+    color: var(--bs-blue);
+    padding: 20px;
+}
+
+body {
+    background-color: var(--bs-blue);
+}
+
+.todays-weather {
+    background-color: aliceblue;
+}
